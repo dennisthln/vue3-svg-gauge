@@ -1,17 +1,19 @@
 {
-  "name": "vue-svg-gauge",
-  "version": "1.2.1",
-  "description": "Customizable gauge component with gradients and animations for VueJs",
-  "author": "Morgane LECURIEUX <morgane.lecurieux.lafayette@gmail.com>",
-  "main": "dist/vue-svg-gauge.js",
+  "name": "vue3-svg-gauge",
+  "version": "1.0.0",
+  "description": "Customizable gauge component with gradients and animations for Vue 3",
+  "author": "Dennis Thelosen",
+  "main": "/dist/vue-svg-gauge.min.js",
   "scripts": {
-    "dev": "cd demo && yarn serve",
-    "build:debug": "cross-env NODE_ENV=debug webpack --config webpack.config.js",
-    "build:release": "cross-env NODE_ENV=production webpack --config webpack.config.js",
-    "build": "npm run build:debug && npm run build:release"
+    "dev": "vite",
+    "build": "vite build"
   },
   "repository": {
     "type": "git",
+    "url": "https://github.com/dennisthln/vue3-svg-gauge"
+  },
+  "funding": {
+    "type": "github",
     "url": "https://github.com/hellocomet/vue-svg-gauge.git"
   },
   "keywords": [
@@ -22,19 +24,18 @@
     "gauge-chart",
     "gauge-gradient",
     "gauge-animation",
-    "vue2-gauge",
+    "vue3-gauge",
     "customizable-gauge",
     "svg-gauge",
-    "vue-2"
+    "vue-3"
   ],
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/hellocomet/vue-svg-gauge/issues"
-  },
   "dependencies": {
-    "@tweenjs/tween.js": "^17.3.0"
+    "@tweenjs/tween.js": "^17.3.0",
+    "vite": "5.4.0"
   },
   "devDependencies": {
+    "@vitejs/plugin-vue": "^5.2.3",
     "@tweenjs/tween.js": "^17.3.0",
     "babel-core": "^6.26.3",
     "babel-loader": "7",
@@ -49,11 +50,10 @@
     "rimraf": "^2.6.1",
     "terser-webpack-plugin": "^1.2.2",
     "uglifyjs-webpack-plugin": "^2.1.1",
-    "vue": "~2.5.22",
+    "vue": "3.4.38",
     "vue-html-loader": "^1.2.4",
     "vue-loader": "^15.6.4",
     "vue-style-loader": "^4.1.2",
-    "vue-template-compiler": "~2.5.22",
     "webpack": "^4.29.5",
     "webpack-cli": "^3.2.3",
     "webpack-merge": "^4.1.0"

@@ -4,18 +4,20 @@
   "private": true,
   "license": "MIT",
   "scripts": {
-    "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build"
+    "serve": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
   },
   "dependencies": {
-    "vue": "^2.6.6",
+    "vue": "^3.4.38",
     "vue-svg-gauge": "file:../"
   },
   "devDependencies": {
-    "@vue/cli-plugin-babel": "^3.4.0",
-    "@vue/cli-service": "^3.4.0",
+    "@vitejs/plugin-vue": "^5.2.3",
     "stylus": "^0.54.5",
     "stylus-loader": "^3.0.2",
-    "vue-template-compiler": "^2.5.21"
+    "vite": "^4.0.0",
+    "vue-router": "^4.0.0",
+    "vuex": "^4.0.0"
   }
 }
