@@ -1,0 +1,3 @@
+{
+  "include": ["src", "vue3-svg-gauge.d.ts"]
+}

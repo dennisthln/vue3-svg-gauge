@@ -1,27 +1,23 @@
-import { defineConfig } from 'vite'
-import vue from '@vitejs/plugin-vue'
-import path from 'path'
+import { defineConfig } from 'vite';
+import vue from '@vitejs/plugin-vue';
+import path from 'path';
 
 export default defineConfig({
-  plugins: [
-    vue(),
-  ],
+  plugins: [vue()],
   build: {
     lib: {
-      entry: path.resolve(__dirname, './src/index.js'),
+      entry: path.resolve(__dirname, 'src/Gauge.vue'),
       name: 'VueSvgGauge',
-      fileName: (format) => `vue-svg-gauge${format === 'umd' ? '.umd' : ''}.min.js`,
-      formats: ['es', 'umd'],
+      fileName: (format) => `vue-svg-gauge.${format}.js`,
+      formats: ['es', 'umd']
     },
-    outDir: path.resolve(__dirname, './dist/'),
     rollupOptions: {
       external: ['vue'],
       output: {
         globals: {
-          vue: 'Vue',
-        },
-      },
-    },
-    minify: 'terser',
-  },
-})
+          vue: 'Vue'
+        }
+      }
+    }
+  }
+});

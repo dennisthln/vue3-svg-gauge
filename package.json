@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Customizable gauge component with gradients and animations for Vue 3",
   "author": "Dennis Thelosen",
-  "main": "/dist/vue-svg-gauge.min.js",
+  "main": "dist/vue-svg-gauge.umd.js",
+  "module": "dist/vue-svg-gauge.es.js",
+  "exports": {
+    "import": "./dist/vue-svg-gauge.es.js",
+    "require": "./dist/vue-svg-gauge.umd.js",
+    "default": "./dist/vue-svg-gauge.es.js"
+  },
   "scripts": {
     "dev": "vite",
     "build": "vite build"
